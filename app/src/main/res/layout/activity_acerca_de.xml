@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokemon_gradient2"
+    tools:context="com.example.jairo.serviciosweb.AcercaDe">
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Información"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="126dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/nombreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NombreJairoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: Jairo Andres Gonzalez Osorio"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="109dp"/>
+
+        <TextView
+            android:id="@+id/codigoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codigo disponible en GITHUB: JairoGonza"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="92dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Info contacto: jagonzalez@umariana.edu.co"/>
+
+        <TextView
+            android:id="@+id/textViewvacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/informaciondelapiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La información fue recopilada por WebService de  http://pokeapi.co/api/v2/, las imágenes de raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/ y el banner de la pagina principal de http://www.ytgraphics.com/wp-content/uploads/2014/12/pokmeon.jpg "
+            android:textAlignment="center"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="92dp"/>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/pokebola"
+            android:onClick="principal"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
